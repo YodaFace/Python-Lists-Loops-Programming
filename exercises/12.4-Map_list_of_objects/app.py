@@ -15,6 +15,24 @@ def calculateAge(birthDate):
     age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
     return age
 
-name_list = list(map(lambda person:  person["name"] , people))
+
+# THIS # 
+def get_name(_dict):
+    return _dict["name"]
+
+name_list = list(map( get_name , people))
+
+# IS THE SAME AS THIS 
+
+name_list = list(map(lambda _dict:"Hello, my name is "+_dict["name"]+" and I am "+str(calculateAge(_dict["birthDate"]))+" years old", people))
+
+# WHICH IS THE SAME # 
+
+names_array = []
+
+for _dict in people:
+    names_array.append(_dict["name"])
+
 print(name_list)
+
 

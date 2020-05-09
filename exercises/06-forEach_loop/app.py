@@ -3,6 +3,45 @@ my_list = [3344,34334,454543,342534,4563456,3445,23455,234,262,2335,43323,4356,3
 
 for numb in my_list:
     #the magic go here:
-   
+    ##if numb is divisible by 14 
+    if (numb % 14 == 0): 
+    ## EXAMPLE if((number % 2) === 0)
         print(numb)
     
+
+## FOUND ON A WEBSITE 
+
+# for num in list:
+# 	if( num%M==0 and num%N==0 ) :
+# 		print num
+
+
+
+
+# def findNoIsDivisibleOrNot(n, l =[]): 
+  
+#     # Checking if a number is divided 
+#     # by every element or not 
+#     for i in range(0, len(l)): 
+#         if l[i]% n != 0: 
+#             return 0
+#     return 1
+  
+# # Driver code 
+# l = [14, 12, 4, 18] 
+# n = 2
+# if findNoIsDivisibleOrNot(n, l) == 1: 
+#     print "Yes"
+# else: 
+#     print "No"
+
+
+
+# # Take a list of numbers
+# my_list = [12, 65, 54, 39, 102, 339, 221,]
+
+# # use anonymous function to filter
+# result = list(filter(lambda x: (x % 13 == 0), my_list))
+
+# # display the result
+# print("Numbers divisible by 13 are",result)
